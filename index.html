@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .box{
+        width:1800px;
+        height:300px;
+        border:2px solid red;
+        background: #ccc;
+        overflow: hidden;
+    }
+    .out{
+        width:3600px;
+        height:300px;
+        box-sizing: border-box;
+        animation:wheel 5s linear infinite;
+    }
+    .out .inner{
+        width:300px;
+        height:300px;
+        font-size: 200px;
+        line-height: 300px;
+        text-align: center;
+        float: left;
+        border:10px solid red;
+        box-sizing: border-box;
+    }
+    @keyframes wheel{
+        100%{
+            transform:translateX(-1800px);
+        }
+    }
+</style>
+<body>
+    <div class="box">
+    <div class="out">
+    <div class="inner">1</div>
+    <div class="inner">2</div>
+    <div class="inner">3</div>
+    <div class="inner">4</div>
+    <div class="inner">5</div>
+    <div class="inner">6</div>
+    <div class="inner">1</div>
+    <div class="inner">2</div>
+    <div class="inner">3</div>
+    <div class="inner">4</div>
+    <div class="inner">5</div>
+    <div class="inner">6</div>
+    </div>
+    </div>
+</body>
+</html>
